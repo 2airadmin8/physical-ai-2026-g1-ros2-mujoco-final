@@ -1,0 +1,15 @@
+name: Static Python and XML checks
+on: [push, pull_request]
+jobs:
+  syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Compile Python sources
+        run: python -m compileall -q pai_g1_closed_loop_ros_external.py pai_g1_ros_ai_policy.py test_ros_protocol_safety.py audit_rosbag_cdr.py pai_verify_ros_external.py
+      - name: Parse XML scene
+        run: python -c 'import xml.etree.ElementTree as E; E.parse("scene_factory_demo.xml"); print("SCENE_XML_PASS")'
+# Physics/ROS integration tests require the pinned ROS2 Humble Docker environment; see README.md
