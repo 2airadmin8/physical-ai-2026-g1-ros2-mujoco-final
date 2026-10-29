@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+evidence/
+*.mp4
+*.db3
+*.zip
+*.tgz
+*.log
+*.secret
+*.env
+!README.md
