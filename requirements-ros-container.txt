@@ -1,0 +1,6 @@
+# Installed inside ROS 2 Humble Ubuntu 22.04 course container
+mujoco==3.14.0
+numpy==1.24.4
+imageio==2.37.0
+imageio-ffmpeg==0.6.0
+# rclpy/std_msgs are provided by /opt/ros/humble and should not be pip-installed
