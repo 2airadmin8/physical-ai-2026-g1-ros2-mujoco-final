@@ -87,7 +87,7 @@ def xml_scene():
   <geom name="wheel_l" type="cylinder" pos="0 .22 -.045" euler="1.5708 0 0" size=".075 .036" rgba=".14 .16 .18 1" contype="0" conaffinity="0"/>
   <geom name="wheel_r" type="cylinder" pos="0 -.22 -.045" euler="1.5708 0 0" size=".075 .036" rgba=".14 .16 .18 1" contype="0" conaffinity="0"/>
   <geom name="mast" type="capsule" fromto="0 0 .10 0 0 .77" size=".04" rgba=".77 .84 .86 1" contype="0" conaffinity="0"/>
-  <camera name="pick_close" pos=".18 -1.00 1.35" euler=".67 0 0" fovy="55"/>
+  <camera name="pick_close" pos=".10 -1.75 1.90" euler=".80 0 0" fovy="60"/>
   <body name="arm_xbody" pos="0 0 .30">
    <joint name="reach_x" axis="1 0 0" type="slide" range="-.08 .64" damping="5"/>
    <geom type="box" size=".12 .08 .06" mass=".75" rgba=".88 .78 .28 1" contype="0" conaffinity="0"/>
@@ -104,8 +104,8 @@ def xml_scene():
   </body>
  </body>
  {''.join(body)}
- <camera name="overview" pos="0 -3.85 5.0" euler=".64 0 0" fovy="45"/>
- <camera name="bin_close" pos="2.6 -2.9 2.35" euler=".67 0 0" fovy="55"/>
+ <camera name="overview" pos=".25 -4.70 5.15" euler=".76 0 0" fovy="48"/>
+ <camera name="bin_close" pos="2.30 -3.35 2.85" euler=".76 0 0" fovy="60"/>
  <camera name="topdown" pos=".15 -.2 8.5" euler="0 0 0" fovy="46"/>
 </worldbody>
 <actuator>
